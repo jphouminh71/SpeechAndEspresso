@@ -1,4 +1,4 @@
-import './styles.css';
+import './Footer.css';
 
 /* Going to the same across all components */
 function Footer()
