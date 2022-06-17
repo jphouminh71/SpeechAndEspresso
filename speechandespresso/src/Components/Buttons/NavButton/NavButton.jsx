@@ -2,7 +2,6 @@ import './NavButton.css';
 
 function NavButton(props)
 {
-
     function handleClick(event)
     {
         event.preventDefault(); 

@@ -1,0 +1,6 @@
+@media sceen and (max-width: 700px)
+{
+    .material-symbols-outlined {
+        font-size:  10px;
+    }
+}
