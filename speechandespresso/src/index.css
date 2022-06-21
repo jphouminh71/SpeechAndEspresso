@@ -1,18 +1,29 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* This stuff will go away when you implement the navbar i think */
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 
 text-color {
   color: pink;
-} 
+}
+
+.banner-container {
+  /* need to not use defined heights */
+  background-color: lightgrey;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testContainer {
+  background-color: azure;
+
+  /* temporary just for component creation */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

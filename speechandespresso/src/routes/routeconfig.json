@@ -1,0 +1,11 @@
+{
+    "endpoints": {},
+    "staticBannerNames": {
+        "AllProductsTitle": "All Products",
+        "ShoppingCartTitle": "Shopping Cart",
+        "CheckoutTitle": "Checkout"
+    },
+    "regexPatterns": {
+        "EndOfURL": "[^/]+(?=/$|$)"
+    }
+}

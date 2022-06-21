@@ -1,12 +1,11 @@
 
 
 /*  Body Component for shop that displays all elements */
-function Products()
-{
+function Products() {
     return (
-        <div>   
-            <h1> All Products : List</h1>
-            </div> 
+        <div>
+            <h1> All Products : List </h1>
+        </div>
     );
 }
 export default Products; 
