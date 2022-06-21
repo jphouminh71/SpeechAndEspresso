@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -16,15 +16,15 @@ const app = (
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App />}>
-          <Route path='shop' element={<Shop />}>
-            <Route path="products" element={<Products />} />
-            <Route path='itemdetails/:itemId' element={<ItemDetails />} />
-          </Route>  
-          <Route path='cart' element={<Cart />} />
-          <Route path="checkout" element={<Checkout />} />
-          <Route path="*" element={<InvalidRoute />} />
+        <Route path='/' element={<Navigate to='home' />} />
+        <Route path='home' element={<App />} />
+        <Route path='shop' element={<Shop />}>
+          <Route path="products" element={<Products />} />
+          <Route path='itemdetails/:itemId' element={<ItemDetails />} />
         </Route>
+        <Route path='cart' element={<Cart />} />
+        <Route path="checkout" element={<Checkout />} />
+        <Route path="*" element={<InvalidRoute />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
