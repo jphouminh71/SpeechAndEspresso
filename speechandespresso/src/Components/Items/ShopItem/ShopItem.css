@@ -1,0 +1,10 @@
+.grid-item {
+    /* Fix up the height and width to be 100 percent of the container*/
+    background-color: lightblue;
+    margin: auto;
+    border-radius: 10px;
+
+    /* Temporary til you add all the things you need to add*/
+    height: 260px;
+    width: 260px;
+}

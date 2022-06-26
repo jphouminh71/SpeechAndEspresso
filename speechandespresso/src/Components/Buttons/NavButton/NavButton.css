@@ -1,6 +1,9 @@
-@media sceen and (max-width: 700px)
-{
+span {
+    cursor: pointer;
+}
+
+@media sceen and (max-width: 700px) {
     .material-symbols-outlined {
-        font-size:  10px;
+        font-size: 10px;
     }
 }

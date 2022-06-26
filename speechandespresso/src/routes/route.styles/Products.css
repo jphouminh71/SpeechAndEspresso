@@ -1,0 +1,12 @@
+.shopitem-grid {
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+
+    width: 75vw;
+    min-height: 300px;
+}

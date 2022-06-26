@@ -1,5 +1,5 @@
-import ItemDetails from '../Components/ItemDetails/ItemDetails';
-import ItemList from "../Components/ItemList/ItemList";
+import ItemDetails from '../Components/Items/ItemDetails/ItemDetails';
+import ItemList from "../Components/Items/ItemList/ItemList";
 import { useParams } from "react-router-dom";
 
 // Controller component for a /ItemDetails page
