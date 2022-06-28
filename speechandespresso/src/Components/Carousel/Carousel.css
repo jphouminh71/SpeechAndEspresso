@@ -1,0 +1,11 @@
+.carousel-container {
+    height: 100%;
+    width: auto;
+}
+
+.carousel-container img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: max-content;
+    object-position: center;
+}
