@@ -1,0 +1,19 @@
+.AddToCart-Circle {
+    position: absolute;
+    background-color: #ddb66b;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+
+    margin: 0;
+    padding: 0;
+    top: -40px;
+    right: -40px;
+
+    /* Center the plus button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    color: white;
+}
