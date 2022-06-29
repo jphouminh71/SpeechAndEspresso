@@ -6,7 +6,10 @@ import './route.styles/Products.css';
 
 function Products() {
 
-    const data = null;
+    const repo = new ItemRepository();
+    let data = repo.getProducts();
+    console.log(data);
+
 
     /* Call back to the /BackendAccess controllers  */
     let fetchedData = stickerData;

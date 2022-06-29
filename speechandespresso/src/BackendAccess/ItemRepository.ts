@@ -5,8 +5,6 @@ import Product from "./Dtos/Product";
 
 // Need to make this an interface that will match back to how the backend will look
 class ItemRepository implements IItemRepository {
-    constructor() { }
-
     public getProducts(): Product[] {
         let fetchedProducts: Product[] = [];
 
