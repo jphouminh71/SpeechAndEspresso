@@ -1,68 +1,64 @@
 .footer-container {
-    /** temporary just to push it down */
-    margin-top: 900px;
-    margin-bottom: 5px;
-
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    font-size: 0.8rem;
-    background-color: rgb(255, 255, 255); 
-    border-style: solid;
-    border-width: 1px;
-    border-color: grey;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 0.8rem;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
 }
 
 @media only screen and (max-width: 720px) {
-    .footer-container {
-      grid-template-columns: 1fr ;
-      font-size: 0.8rem;
-    }
+  .footer-container {
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
   }
+}
 
 
+.contact-information {
+  display: grid;
+  grid-template-rows: 1rem;
+  row-gap: 1rem;
+  justify-content: center;
+}
+
+.social-media-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+
+.news-letter-signup {
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 720px) {
   .contact-information {
-    display: grid; 
+    display: grid;
     grid-template-rows: 1rem;
-    row-gap: 1rem;
+    row-gap: 0.1rem;
     justify-content: center;
   }
 
   .social-media-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
   }
 
   .news-letter-signup {
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
   }
-
-  @media only screen and (max-width: 720px) {
-    .contact-information {
-        display: grid; 
-        grid-template-rows: 1rem;
-        row-gap: 0.1rem;
-        justify-content: center;
-      }
-    
-      .social-media-links {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-content: space-evenly;
-        align-items: center;
-      }
-    
-      .news-letter-signup {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-content: space-evenly;
-        align-items: center;
-      }
-  }
+}

@@ -1,29 +1,24 @@
 import ShopItem from '../Components/Items/ShopItem/ShopItem';
+import stickerData from '../Assets/a_mockData/StickerData';
 import './route.styles/Products.css';
 
 /*  Body Component for shop that displays all elements */
 function Products() {
-    const stickerNames = [
-        "sticker 1",
-        "sticker 2",
-        "sticker 3",
-        "sticker 4",
-        "sticker 5",
-        "sticker 6",
-        "sticker 7",
-        "sticker 8",
-        "sticker 9"
-    ]
+
+    /* Call back to the /BackendAccess controllers  */
+    let fetchedData = stickerData;
+
     return (
         <div>
             <div className="shopitem-grid">
-                {
-                    stickerNames.map((name) => {
-                        return <ShopItem itemName={name} />
-                    })
-                }
+                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
+                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
+                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
+
+                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
+                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
+                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
             </div>
-            <h1 style={{ textAlign: "center", backgroundColor: "pink" }}> All Products : List </h1>
         </div>
     );
 }

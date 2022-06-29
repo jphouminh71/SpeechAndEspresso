@@ -9,18 +9,7 @@ text-color {
   color: pink;
 }
 
-.banner-container {
-  /* need to not use defined heights */
-  background-color: lightgrey;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .testContainer {
-  background-color: azure;
-
   /* temporary just for component creation */
   overflow: hidden;
   display: flex;

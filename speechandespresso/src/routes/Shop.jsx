@@ -1,11 +1,13 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import './route.styles/Shop.css';
+import '../Components/Banner/banner.css';
 import routeConfig from './routeconfig.json';
 
 function configureBannerNameByPath(currentLocation) {
+
+    // pull this out into the shop controller? 
     const regexExpr = routeConfig.regexPatterns.EndOfURL;
     const currentLocationName = currentLocation.pathname.match(regexExpr)[0];
-    console.log(currentLocationName);
     let name = "";
     switch (currentLocationName) {
         case "shop":
@@ -36,7 +38,7 @@ function Shop() {
     return (
         <div>
             <div className="banner-container">
-                <h1> {configureBannerNameByPath(location)}  </h1>
+                <h1 className="banner-text"> {configureBannerNameByPath(location)}  </h1>
             </div>
             <div className="testContainer">
                 <Outlet />

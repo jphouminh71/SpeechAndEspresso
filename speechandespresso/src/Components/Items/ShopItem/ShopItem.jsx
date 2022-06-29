@@ -1,6 +1,7 @@
+import { useEffect } from "react";
 import AddToCartButton from "../../Buttons/AddToCart/AddToCartButton";
 import CarouselComponent from "../../Carousel/Carousel";
-import "./ItemPreview.css";
+import "./ShopItem.css";
 
 function ItemPreview(props) {
     function navigateToItemDetails(e) {
@@ -12,6 +13,11 @@ function ItemPreview(props) {
         console.log("Adding to cart!");
         console.log(props);
     }
+
+    useEffect(() => {
+        console.log("item loaded!");
+        console.log(props);
+    });
 
     return (
         <div className="preview-background-container">

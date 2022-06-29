@@ -1,0 +1,24 @@
+.banner-container {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../Assets/Wallpaper/Default_Pattern.webp);
+}
+
+.banner-text {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+/* May need to add more media queries for other screen dimensions */
+@media only screen and (max-width: 720px) {
+    .banner-text {
+        font-size: 1.8rem;
+    }
+
+    .banner-container {
+        height: 25vh;
+    }
+}
