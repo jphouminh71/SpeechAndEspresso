@@ -1,10 +1,12 @@
 import ShopItem from '../Components/Items/ShopItem/ShopItem';
 import stickerData from '../Assets/a_mockData/StickerData';
 import stickerData2 from '../Assets/a_mockData/StickerData2';
+import ItemRepository from '../BackendAccess/ItemRepository.ts';
 import './route.styles/Products.css';
 
-/*  Body Component for shop that displays all elements */
 function Products() {
+
+    const data = null;
 
     /* Call back to the /BackendAccess controllers  */
     let fetchedData = stickerData;
