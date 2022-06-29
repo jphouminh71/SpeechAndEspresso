@@ -2,18 +2,15 @@ import "./AddToCartButton.css";
 
 function AddToCartButton(props) {
     function takeAction(e) {
-        e.preventDefault();
         props.action();
     }
 
     return (
-        <div onClick={takeAction}>
-            <div className="AddToCart-Circle">
-                <span class="material-symbols-outlined">
-                    shopping_bag
-                </span>
-            </div>
-        </div>
+        <button className="AddToCart-Circle" onClick={takeAction}>
+            <span className="material-symbols-outlined">
+                local_mall
+            </span>
+        </button>
     );
 }
 export default AddToCartButton;

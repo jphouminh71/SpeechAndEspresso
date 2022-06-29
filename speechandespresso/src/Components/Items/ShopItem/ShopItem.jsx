@@ -6,13 +6,11 @@ import "./ShopItem.css";
 
 function ItemPreview(props) {
     function navigateToItemDetails(e) {
-        e.preventDefault();
         console.log("Shop now!");
         console.log(props);
     }
 
     function addToCart(e) {
-        e.preventDefault();
         console.log("Adding to cart!");
         console.log(props);
     }
