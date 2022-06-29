@@ -8,7 +8,11 @@ function AddToCartButton(props) {
 
     return (
         <div onClick={takeAction}>
-            <p className="AddToCart-Circle"> + </p>
+            <div className="AddToCart-Circle">
+                <span class="material-symbols-outlined">
+                    shopping_bag
+                </span>
+            </div>
         </div>
     );
 }
