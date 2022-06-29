@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import AddToCartButton from "../../Buttons/AddToCart/AddToCartButton";
 import CarouselComponent from "../../Carousel/Carousel";
 import ShopButton from "../../Buttons/ShopButton/ShopButton";
