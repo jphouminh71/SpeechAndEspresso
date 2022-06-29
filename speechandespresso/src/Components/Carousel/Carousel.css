@@ -6,7 +6,5 @@
 
 .carousel-container img {
     aspect-ratio: 1/1;
-    width: 100%;
-    height: max-content;
     object-position: center;
 }
