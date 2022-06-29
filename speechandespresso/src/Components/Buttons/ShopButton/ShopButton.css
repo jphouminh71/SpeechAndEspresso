@@ -1,0 +1,12 @@
+.shopnow-btn {
+    background-color: #ddb66b;
+    color: white;
+    border-width: 0px;
+    width: 70%;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 0.2rem;
+    padding: 5px 0px 5px 0px;
+}

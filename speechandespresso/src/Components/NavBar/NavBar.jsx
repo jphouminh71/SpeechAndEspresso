@@ -5,12 +5,15 @@ import NavButton from '../Buttons/NavButton/NavButton';
 function Header() {
     return (
         <div className="header-grid">
+
             <div className="header-logo-container">
                 <img className="header-logo" alt="logo" src={Logo} />
             </div>
+
             <div className="header-text-container">
                 <h1 className="header-text"> Speech and Espresso </h1>
             </div>
+
             <div className="header-button-container">
                 <NavButton type="Mail" />
                 <NavButton type="Search" />

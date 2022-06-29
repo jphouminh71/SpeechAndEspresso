@@ -1,6 +1,6 @@
 body {
   /* This stuff will go away when you implement the navbar i think */
-  max-width: 1300px;
+  max-width: 1620px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -11,8 +11,11 @@ text-color {
 
 .testContainer {
   /* temporary just for component creation */
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

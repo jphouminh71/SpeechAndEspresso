@@ -1,23 +1,21 @@
 import { useEffect } from "react";
 import AddToCartButton from "../../Buttons/AddToCart/AddToCartButton";
 import CarouselComponent from "../../Carousel/Carousel";
+import ShopButton from "../../Buttons/ShopButton/ShopButton";
 import "./ShopItem.css";
 
 function ItemPreview(props) {
     function navigateToItemDetails(e) {
         e.preventDefault();
+        console.log("Shop now!");
         console.log(props);
     }
 
     function addToCart(e) {
+        e.preventDefault();
         console.log("Adding to cart!");
         console.log(props);
     }
-
-    useEffect(() => {
-        console.log("item loaded!");
-        console.log(props);
-    });
 
     return (
         <div className="preview-background-container">
@@ -32,10 +30,7 @@ function ItemPreview(props) {
                     <CarouselComponent imgs={props.imgs} />
                 </div>
                 <p className="item-price"> ${props.price} </p>
-                <button onClick={navigateToItemDetails} className="shopnow-btn">
-                    {" "}
-                    SHOP NOW{" "}
-                </button>
+                <ShopButton action={navigateToItemDetails} />
             </div>
         </div>
     );

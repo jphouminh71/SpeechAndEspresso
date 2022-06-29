@@ -6,6 +6,14 @@
     background-image: url(../../Assets/Wallpaper/Default_Pattern.webp);
 }
 
+.banner-divider {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../Assets/Wallpaper/Default_Pattern.webp);
+}
+
 .banner-text {
     font-weight: bold;
     font-size: 2rem;

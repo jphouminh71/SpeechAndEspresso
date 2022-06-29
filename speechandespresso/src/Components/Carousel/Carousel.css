@@ -1,6 +1,7 @@
 .carousel-container {
     height: 100%;
     width: auto;
+    z-index: 0;
 }
 
 .carousel-container img {
