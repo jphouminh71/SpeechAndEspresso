@@ -1,11 +1,9 @@
 .shopitem-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    row-gap: 3.2rem;
-    column-gap: 0rem;
+    row-gap: 3rem;
     background-color: white;
-    width: 80%;
+    width: 75%;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin: auto;

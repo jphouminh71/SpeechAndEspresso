@@ -22,7 +22,7 @@ function ItemPreview(props) {
             </div>
             <div className="information-container">
                 <div className="title-content">
-                    <h1> {props.title} </h1>
+                    <h1> {props.title.slice(0, 50)} </h1>
                 </div>
                 <div className="image-carousel-container">
                     <CarouselComponent imgs={props.imgs} />

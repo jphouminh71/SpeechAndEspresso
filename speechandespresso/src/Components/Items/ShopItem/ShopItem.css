@@ -25,6 +25,7 @@ img {
     width: 88%;
     height: auto;
     max-height: 100%;
+    max-width: 100%;
 }
 
 .information-container {
@@ -37,21 +38,18 @@ img {
 .title-content {
     max-height: 4rem;
     font-size: 0.6rem;
-    overflow: hidden;
     text-align: center;
-
-    width: 65%;
-    padding-bottom: 0.5rem;
-    margin: auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+    .title-content {
+        font-size: 0.5rem;
+    }
+}
 
 .image-carousel-container {
-    width: 70%;
+    width: 100%;
     margin: auto;
 }
 

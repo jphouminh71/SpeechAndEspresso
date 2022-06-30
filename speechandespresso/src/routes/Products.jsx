@@ -1,37 +1,34 @@
 import ShopItem from '../Components/Items/ShopItem/ShopItem';
-import stickerData from '../Assets/a_mockData/StickerData';
-import stickerData2 from '../Assets/a_mockData/StickerData2';
 import ItemRepository from '../BackendAccess/ItemRepository.ts';
 import './route.styles/Products.css';
+import { useEffect, useState } from 'react';
 
 function Products() {
+    const [items, setItems] = useState([]);
 
-    const repo = new ItemRepository();
-    let data = repo.getProducts();
-    console.log(data);
+    function getItems() {
+        let repo = new ItemRepository();
+        let data = repo.getProducts();
+        console.log(data)
+        setItems(data);
+    }
 
+    // You might have to end up changing how this is used in the future 
+    // since you might need to refresh data every now and then idk yet 
+    useEffect(() => {
+        getItems();
+    }, []);
 
-    /* Call back to the /BackendAccess controllers  */
-    let fetchedData = stickerData;
-    let fetchedData2 = stickerData2;
-
-    /* Filtering options for the data */
-
-    /* Show all items: 20 items on a page max? */
     return (
         <div>
             <div className="shopitem-grid">
-                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
-                <ShopItem title={fetchedData2.title} imgs={fetchedData2.imgs} price={fetchedData2.price.toFixed(2)} />
-                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
-
-                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
-                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
-                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
-
-                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
-                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
-                <ShopItem title={fetchedData.title} imgs={fetchedData.imgs} price={fetchedData.price.toFixed(2)} />
+                {items.map((item, index) => {
+                    return <ShopItem
+                        key={index}
+                        title={item.title}
+                        imgs={item.imgs}
+                        price={item.price.toFixed(2)} />
+                })}
             </div>
         </div>
     );
