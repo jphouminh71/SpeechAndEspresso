@@ -8,5 +8,9 @@
     },
     "regexPatterns": {
         "EndOfURL": "[^/]+(?=/$|$)"
+    },
+    "maxItemsPerPage": {
+        "featuredCollection": "6",
+        "allProducts": "9"
     }
 }

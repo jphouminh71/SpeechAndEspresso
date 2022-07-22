@@ -1,10 +1,11 @@
 import ShopItem from '../Components/Items/ShopItem/ShopItem';
 import ItemRepository from '../BackendAccess/ItemRepository.ts';
-import './route.styles/Products.css';
+import routeConfig from './routeconfig.json';
 import { useEffect, useState, useRef } from 'react';
+import './route.styles/Products.css';
 
 // place in config 
-const maxItemsPerPage = 9;
+const maxItemsPerPage = routeConfig.maxItemsPerPage.allProducts;
 
 function Products() {
     const [displayedProducts, setDisplayedProducts] = useState([]);

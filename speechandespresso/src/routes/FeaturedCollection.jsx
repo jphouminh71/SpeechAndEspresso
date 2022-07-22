@@ -1,15 +1,21 @@
 import ShopItem from '../Components/Items/ShopItem/ShopItem';
 import ItemRepository from '../BackendAccess/ItemRepository.ts';
-import './route.styles/Products.css';
+import routeConfig from './routeconfig.json';
 import { useEffect, useState, useRef } from 'react';
+import './route.styles/Products.css';
 
 // place in config  
-const maxItemsPerPage = 6;
+const maxItemsPerPage = routeConfig.maxItemsPerPage.featuredCollection;
 
 function FeaturedCollection() {
     const [displayedProducts, setDisplayedProducts] = useState([]);
     const [subsetIndex, setSubsetIndex] = useState(0);
     const ProductSet = useRef([]);
+
+    function navigateTo(path) {
+        // navigate to the /allproducts
+        console.log("navigating to: " + path);
+    }
 
     function loadPreviousItemSubset() {
         if (subsetIndex > 0) {
@@ -48,6 +54,7 @@ function FeaturedCollection() {
                 })}
                 <button onClick={loadPreviousItemSubset}> prev </button>
                 <button onClick={loadNextItemSubset}> next </button>
+                <button onClick={navigateTo}> All Products </button>
             </div>
         </div>
     );

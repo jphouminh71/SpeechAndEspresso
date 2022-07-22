@@ -11,7 +11,7 @@ function configureBannerNameByPath(currentLocation) {
     let name = "";
     switch (currentLocationName) {
         case "featuredcollection":
-            name = "Featured Collection";
+            name = routeConfig.staticBannerNames.FeaturedCollectionTitle;
             break;
         case "products":
             name = routeConfig.staticBannerNames.AllProductsTitle;
