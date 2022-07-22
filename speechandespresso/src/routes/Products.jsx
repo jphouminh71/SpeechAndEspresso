@@ -3,7 +3,8 @@ import ItemRepository from '../BackendAccess/ItemRepository.ts';
 import './route.styles/Products.css';
 import { useEffect, useState, useRef } from 'react';
 
-const maxItemsPerPage = 6;
+// place in config 
+const maxItemsPerPage = 9;
 
 function Products() {
     const [displayedProducts, setDisplayedProducts] = useState([]);
