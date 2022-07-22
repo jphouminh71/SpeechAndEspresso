@@ -93,8 +93,6 @@ let stickerData = [
         price: 8.00,
         description: "Inspired by Avatar: The Last Airbender with cactus juice and Sokka but in the korean drink soju!\nProduct colors may vary from digital to in person. Waterproof vinyl sticker. Different material from other listings on my page. Looks great on water bottles, laptops, planners, notebooks, and more!\nComes in both waterproof and nonwaterproof version for bullet journaling!\nAlthough the product is waterproof, the first layer is not waterproof so please only handwash if applying to a water bottle and immediately pat dry.",
         listingDate: "2022/03/28"
-    },
+    }
 ]
-
-
 export default stickerData;

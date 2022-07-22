@@ -10,16 +10,11 @@ function Products() {
     const [subsetIndex, setSubsetIndex] = useState(0);
     const ProductSet = useRef([]);
 
-    function printSubsetIndex() {
-        console.log(subsetIndex);
-    }
-
     function loadPreviousItemSubset() {
         if (subsetIndex > 0) {
             setSubsetIndex(subsetIndex - 1);
             setDisplayedProducts(ProductSet.current[subsetIndex - 1])
         }
-        printSubsetIndex();
     }
 
     function loadNextItemSubset() {
@@ -27,7 +22,6 @@ function Products() {
             setSubsetIndex(subsetIndex + 1);
             setDisplayedProducts(ProductSet.current[subsetIndex + 1]);
         }
-        printSubsetIndex();
     }
 
     function getInitialItems() {
