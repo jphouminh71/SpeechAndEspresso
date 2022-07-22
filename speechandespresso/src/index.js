@@ -15,22 +15,20 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const app = (
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<App />}>
-          <Route path='shop' element={<Shop />}>
-            <Route path="products" element={<Products />} />
-            <Route path='itemdetails/:itemId' element={<ItemDetailsController />} />
-            <Route path='cart' element={<Cart />} />
-            <Route path='checkout' element={<Checkout />} />
-          </Route>
-
-          <Route path="*" element={<InvalidRoute />} />
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<App />}>
+        <Route path='shop' element={<Shop />}>
+          <Route path="products" element={<Products />} />
+          <Route path='itemdetails/:itemId' element={<ItemDetailsController />} />
+          <Route path='cart' element={<Cart />} />
+          <Route path='checkout' element={<Checkout />} />
         </Route>
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+
+        <Route path="*" element={<InvalidRoute />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
 );
 root.render(app);
 
