@@ -11,6 +11,7 @@ import InvalidRoute from './routes/InvalidRoute';
 import Products from './routes/Products';
 
 import './index.css';
+import FeaturedCollection from './routes/FeaturedCollection';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,6 +20,7 @@ const app = (
     <Routes>
       <Route path='/' element={<App />}>
         <Route path='shop' element={<Shop />}>
+          <Route path="featuredcollection" element={<FeaturedCollection />} />
           <Route path="products" element={<Products />} />
           <Route path='itemdetails/:itemId' element={<ItemDetailsController />} />
           <Route path='cart' element={<Cart />} />

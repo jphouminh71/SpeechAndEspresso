@@ -2,12 +2,12 @@ import stickerData from "../Assets/a_mockData/StickerData";
 import IItemRepository from "./Interfaces/ItemRepository";
 import Product from "./Dtos/Product";
 
+// These will transition into Api Calls to get data back 
 class ItemRepository implements IItemRepository {
 
     public getProducts(): Product[] {
         let fetchedProducts: Product[] = [];
 
-        // temp way to load in data 
         for (let item of stickerData) {
             let product: Product = {
                 id: item.id,

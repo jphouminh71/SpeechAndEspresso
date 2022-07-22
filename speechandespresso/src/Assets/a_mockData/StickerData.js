@@ -93,6 +93,36 @@ let stickerData = [
         price: 8.00,
         description: "Inspired by Avatar: The Last Airbender with cactus juice and Sokka but in the korean drink soju!\nProduct colors may vary from digital to in person. Waterproof vinyl sticker. Different material from other listings on my page. Looks great on water bottles, laptops, planners, notebooks, and more!\nComes in both waterproof and nonwaterproof version for bullet journaling!\nAlthough the product is waterproof, the first layer is not waterproof so please only handwash if applying to a water bottle and immediately pat dry.",
         listingDate: "2022/03/28"
+    },
+    {
+        id: 9,
+        title: "Tata Lollipop Waterproof Die Cut Sticker",
+        imgs: [
+            "https://i.etsystatic.com/23397887/r/il/afb41b/3414230747/il_794xN.3414230747_hikn.jpg"
+        ],
+        price: 4.25,
+        description: "BT21 BTS LINE FRIENDS J-hope character Mang in candy form!\nLooks great on water bottles, laptops, etc!",
+        listingDate: "2022/06/07"
+    },
+    {
+        id: 10,
+        title: "Mang BT21 candy waterproof stickers",
+        imgs: [
+            "https://i.etsystatic.com/23397887/r/il/1af054/3366552986/il_794xN.3366552986_ltzy.jpg"
+        ],
+        price: 4.25,
+        description: "Great gift for future SLP2BE, current SLP/SLPA, speech lovers, lover of larynx, music lovers, etc\n1x1 inch\n please remove protective film",
+        listingDate: "2022/03/28"
+    },
+    {
+        id: 11,
+        title: "ATLA Avatar The Last Airbender Aang soymilk Chiense Drink Waterproof Sticker",
+        imgs: [
+            "https://i.etsystatic.com/23397887/r/il/b7fa93/3032207011/il_794xN.3032207011_mvbn.jpg"
+        ],
+        price: 4.00,
+        description: "Inspired by Avatar: The Last Airbender with cactus juice and Sokka but in the korean drink soju!\nProduct colors may vary from digital to in person. Waterproof vinyl sticker. Different material from other listings on my page. Looks great on water bottles, laptops, planners, notebooks, and more!\nComes in both waterproof and nonwaterproof version for bullet journaling!\nAlthough the product is waterproof, the first layer is not waterproof so please only handwash if applying to a water bottle and immediately pat dry.",
+        listingDate: "2022/03/11"
     }
 ]
 export default stickerData;

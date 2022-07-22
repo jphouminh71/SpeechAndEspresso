@@ -1,6 +1,7 @@
 {
     "endpoints": {},
     "staticBannerNames": {
+        "FeaturedCollectionTitle": "Featured Collection",
         "AllProductsTitle": "All Products",
         "ShoppingCartTitle": "Shopping Cart",
         "CheckoutTitle": "Checkout"

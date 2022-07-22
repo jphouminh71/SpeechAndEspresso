@@ -10,8 +10,8 @@ function configureBannerNameByPath(currentLocation) {
     const currentLocationName = currentLocation.pathname.match(regexExpr)[0];
     let name = "";
     switch (currentLocationName) {
-        case "shop":
-            name = "Featured Collection"; // ideally want to query db here
+        case "featuredcollection":
+            name = "Featured Collection";
             break;
         case "products":
             name = routeConfig.staticBannerNames.AllProductsTitle;
@@ -26,7 +26,7 @@ function configureBannerNameByPath(currentLocation) {
             if (currentLocation.pathname.match("/itemdetails/")) {
                 name = currentLocationName;
             } else {
-                name = "something went wrong in configureBannerName()!";
+                name = "configureBannerName(): Invalid path: /" + currentLocationName;
             }
             break;
     }
